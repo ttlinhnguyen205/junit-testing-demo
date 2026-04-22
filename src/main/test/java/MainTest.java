@@ -17,4 +17,14 @@ public class MainTest {
     void testSumUpToN() {
         assertEquals(15, Main.sumUpToN(5));
     }
+
+    @Test
+    void testSumUpToNZero() {
+        assertEquals(0, Main.sumUpToN(0));
+    }
+
+    @Test
+    void testSumUpToNNegative() {
+        assertEquals(0, Main.sumUpToN(-3));
+    }
 }
